@@ -1,0 +1,62 @@
+archetype (adl_version=1.4; uid=49efc649-a535-4c47-8070-50591290e5b2)
+	openEHR-EHR-COMPOSITION.cannabis.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::de]>
+
+description
+	original_author = <
+		["date"] = <"2022-03-08">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"99d47dd31cde9177619990f779204554">
+		["build_uid"] = <"e7adda56-58da-3f4b-9da5-00e6139c0e04">
+	>
+
+definition
+	COMPOSITION[at0000] matches {    -- Cannabis
+		category matches {
+			DV_CODED_TEXT[at0001] matches {    -- Coded text
+				defining_code matches {
+					[openehr::433]
+				}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT[at0002] matches {*}    -- Event Context
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"Cannabis">
+					description = <"Cannabis">
+				>
+				["at0001"] = <
+					text = <"Coded text">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Event Context">
+					description = <"">
+				>
+			>
+		>
+	>
