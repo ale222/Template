@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -13,6 +20,10 @@ description
 	>
 	lifecycle_state = <"unmanaged">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 		>
@@ -23,7 +34,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"aae4c2f23e5b0bb1525abe9bbff9bf83">
+		["MD5-CAM-1.0.1"] = <"53f90fe7118d269aa4fa88fe66d62b7c">
 		["build_uid"] = <"fae94ce9-96ad-31a6-973a-4b12c0d93fdf">
 	>
 
@@ -81,6 +92,34 @@ ontology
 				>
 				["at0006"] = <
 					text = <"medikament">
+					description = <"">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Behandlung (en)">
+					description = <"*Behandlung (en)">
+				>
+				["at0001"] = <
+					text = <"*Current Activity (en)">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"*37b sgb v (en)">
+					description = <"*Erfolgt die Verodnung ... (en)">
+				>
+				["at0004"] = <
+					text = <"*leistung nach satz 1 (en)">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"*medikament (en)">
 					description = <"">
 				>
 			>
