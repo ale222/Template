@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0d2d86318128b2c7085080d4cfa46e53">
+		["MD5-CAM-1.0.1"] = <"b3a812a0016f84a1f09e591871bf94da">
 		["build_uid"] = <"fae94ce9-96ad-31a6-973a-4b12c0d93fdf">
 	>
 
@@ -43,6 +43,10 @@ definition
 								value matches {
 									DV_BOOLEAN matches {*}
 								}
+							}
+							allow_archetype CLUSTER[at0006] occurrences matches {0..*} matches {    -- medikament
+								include
+									archetype_id/value matches {/openEHR-EHR-CLUSTER\.medikament\.v0/}
 							}
 						}
 					}
@@ -73,6 +77,10 @@ ontology
 				>
 				["at0004"] = <
 					text = <"leistung nach satz 1">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"medikament">
 					description = <"">
 				>
 			>
